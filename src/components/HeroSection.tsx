@@ -1,0 +1,59 @@
+import heroDogs from "@/assets/hero-dogs.jpg";
+import { Button } from "@/components/ui/button";
+
+const services = [
+  "Dog Walking", "Pet Sitting", "Boarding", "Drop-ins",
+  "Cat Care", "Reptile Care", "Bird Care", "Aquatic Pets",
+  "Dog Walking", "Pet Sitting", "Boarding", "Drop-ins",
+  "Cat Care", "Reptile Care", "Bird Care", "Aquatic Pets",
+];
+
+const dotColors = ["bg-yellow-400", "bg-blue-400", "bg-green-400", "bg-red-400", "bg-pink-400", "bg-purple-400", "bg-orange-400", "bg-lime-strong"];
+
+const HeroSection = () => {
+  return (
+    <section className="relative bg-background">
+      <div className="text-center pt-10 pb-4 px-4">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading text-foreground">
+          The Pet Care that <em>works</em> for you
+        </h1>
+        <p className="mt-4 text-muted-foreground max-w-2xl mx-auto font-body text-sm md:text-base">
+          Furrs N' Purrs provides dog walking services as well as drop-ins, sitting/boarding for all animals big or small. We also cater to cats, birds, reptiles, aquatics, and any other loving pets!
+        </p>
+        <div className="mt-6">
+          <a href="tel:3476338034">
+            <Button className="rounded-full bg-primary text-primary-foreground px-10 py-6 text-base font-body">
+              Call Us
+            </Button>
+          </a>
+        </div>
+      </div>
+
+      <div className="mt-6 w-full overflow-hidden">
+        <img
+          src={heroDogs}
+          alt="Two happy dogs - a schnauzer and a pitbull"
+          className="w-full max-h-[500px] object-cover object-center"
+          width={1200}
+          height={500}
+        />
+      </div>
+
+      {/* Scrolling services marquee */}
+      <div className="bg-background py-4 overflow-hidden border-t border-border">
+        <div className="flex animate-marquee whitespace-nowrap">
+          {services.map((service, i) => (
+            <div key={i} className="flex items-center mx-4">
+              <span className="px-4 py-2 rounded-full border border-border text-sm font-body text-foreground">
+                {service}
+              </span>
+              <span className={`w-2 h-2 rounded-full ml-4 ${dotColors[i % dotColors.length]}`} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
