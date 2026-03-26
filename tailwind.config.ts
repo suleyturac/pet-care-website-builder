@@ -13,7 +13,18 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ['DM Serif Display', 'serif'],
+        body: ['DM Sans', 'sans-serif'],
+      },
       colors: {
+        lime: {
+          DEFAULT: "hsl(var(--lime))",
+          strong: "hsl(var(--lime-strong))",
+        },
+        "pink-soft": "hsl(var(--pink-soft))",
+        "yellow-soft": "hsl(var(--yellow-soft))",
+        "blue-soft": "hsl(var(--blue-soft))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
