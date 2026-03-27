@@ -13,14 +13,14 @@ const dotColors = ["bg-yellow-400", "bg-blue-400", "bg-green-400", "bg-red-400",
 const HeroSection = () => {
   return (
     <section className="relative bg-background">
-      <div className="text-center pt-10 pb-4 px-4">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading text-foreground">
-          The Pet Care that <em>works</em> for you
+      <div className="text-center pt-10 px-4 relative z-10">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading text-foreground leading-tight max-w-3xl mx-auto">
+          The Pet Care that <em className="not-italic font-heading italic">works</em> for you
         </h1>
-        <p className="mt-4 text-muted-foreground max-w-2xl mx-auto font-body text-sm md:text-base">
+        <p className="mt-3 text-muted-foreground max-w-2xl mx-auto font-body text-sm md:text-base">
           Furrs N' Purrs provides dog walking services as well as drop-ins, sitting/boarding for all animals big or small. We also cater to cats, birds, reptiles, aquatics, and any other loving pets!
         </p>
-        <div className="mt-6">
+        <div className="mt-4 mb-0">
           <a href="tel:3476338034">
             <Button className="rounded-full bg-primary text-primary-foreground px-10 py-6 text-base font-body">
               Call Us
@@ -29,7 +29,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="mt-6 w-full overflow-hidden">
+      <div className="-mt-6 w-full overflow-hidden relative z-0">
         <img
           src={heroDogs}
           alt="Two happy dogs - a schnauzer and a pitbull"
