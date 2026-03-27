@@ -56,24 +56,34 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom CTA */}
-      <div className="mx-6 md:mx-12 lg:mx-20 mb-8 rounded-3xl bg-pink-soft flex flex-col md:flex-row items-center overflow-hidden">
-        <div className="md:w-1/3 h-[200px] md:h-auto">
-          <img src={dogCatFooter} alt="Dog and cat together" className="w-full h-full object-cover" loading="lazy" width={512} height={640} />
-        </div>
-        <div className="md:w-2/3 p-8 text-center">
-          <h3 className="text-2xl md:text-3xl font-heading text-foreground">
-            Give your pet the best - Contact us!
-          </h3>
-          <div className="mt-4 flex items-center justify-center gap-4">
-            <a href="tel:3476338034">
-              <Button className="rounded-full bg-primary text-primary-foreground px-6 py-3 font-body">
-                Book an appointment
-              </Button>
-            </a>
-            <a href="https://fnppetcare.com/" target="_blank" rel="noopener noreferrer" className="text-sm font-body text-foreground hover:text-muted-foreground flex items-center gap-1">
-              Browse all services →
-            </a>
+      {/* Bottom CTA with overflow image */}
+      <div className="mx-6 md:mx-12 lg:mx-20 mb-8 rounded-3xl bg-pink-soft relative overflow-visible">
+        <div className="flex flex-col md:flex-row items-center">
+          {/* Overflowing image */}
+          <div className="md:w-1/3 relative">
+            <img
+              src={dogCatFooter}
+              alt="Dog and cat together"
+              className="w-[280px] md:w-[320px] h-auto object-cover rounded-2xl md:absolute md:bottom-0 md:left-8 md:-top-16 mx-auto -mt-10 md:mt-0"
+              loading="lazy"
+              width={512}
+              height={640}
+            />
+          </div>
+          <div className="md:w-2/3 p-8 text-center">
+            <h3 className="text-2xl md:text-3xl font-heading text-foreground">
+              Give your pet the best - Contact us!
+            </h3>
+            <div className="mt-4 flex items-center justify-center gap-4">
+              <a href="tel:3476338034">
+                <Button className="rounded-full bg-primary text-primary-foreground px-6 py-3 font-body">
+                  Book an appointment
+                </Button>
+              </a>
+              <a href="https://fnppetcare.com/" target="_blank" rel="noopener noreferrer" className="text-sm font-body text-foreground hover:text-muted-foreground flex items-center gap-1">
+                Browse all services →
+              </a>
+            </div>
           </div>
         </div>
       </div>

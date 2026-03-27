@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['DM Serif Display', 'serif'],
-        body: ['DM Sans', 'sans-serif'],
+        heading: ['Playfair Display', 'serif'],
+        body: ['Nunito Sans', 'sans-serif'],
       },
       colors: {
         lime: {
