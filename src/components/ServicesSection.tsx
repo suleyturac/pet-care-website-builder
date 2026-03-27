@@ -32,8 +32,8 @@ const ServicesSection = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Left image - hidden on mobile */}
-        <div className="hidden md:block rounded-2xl overflow-hidden bg-yellow-soft">
+        {/* Left image */}
+        <div className="rounded-2xl overflow-hidden bg-yellow-soft">
           <img src={vetWithDog} alt="Vet caring for a dog" className="w-full h-full object-cover" loading="lazy" />
         </div>
 

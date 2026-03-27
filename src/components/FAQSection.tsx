@@ -35,10 +35,15 @@ const faqs = [
 const FAQSection = () => {
   return (
     <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24 bg-background">
-      <h2 className="text-3xl md:text-5xl font-heading text-foreground mb-8">
-        Frequently Asked Questions
-      </h2>
-      <div className="max-w-3xl">
+      <div className="max-w-3xl mx-auto text-center">
+        <h2 className="text-3xl md:text-5xl font-heading text-foreground mb-3">
+          Frequently Asked <span className="font-accent">Questions</span>
+        </h2>
+        <p className="text-muted-foreground font-body text-sm mb-10">
+          Everything you need to know about our pet care services
+        </p>
+      </div>
+      <div className="max-w-3xl mx-auto">
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, i) => (
             <AccordionItem key={i} value={`faq-${i}`} className="border-border">
