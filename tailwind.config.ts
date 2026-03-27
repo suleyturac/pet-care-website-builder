@@ -14,8 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ['Playfair Display', 'serif'],
-        body: ['Nunito Sans', 'sans-serif'],
+        heading: ['Sora', 'sans-serif'],
+        body: ['Sora', 'sans-serif'],
+        accent: ['Instrument Serif', 'serif'],
       },
       colors: {
         lime: {

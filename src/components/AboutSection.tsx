@@ -11,7 +11,7 @@ const stats = [
 const AboutSection = () => {
   return (
     <section id="about" className="px-6 md:px-12 lg:px-20 py-16 md:py-24 bg-background">
-      <h2 className="text-3xl md:text-5xl font-heading text-foreground mb-6">About us</h2>
+      <h2 className="text-3xl md:text-5xl font-heading text-foreground mb-6">About <span className="font-accent">us</span></h2>
 
       {/* Desktop: two columns mismatched. Mobile: one paragraph + one photo */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">

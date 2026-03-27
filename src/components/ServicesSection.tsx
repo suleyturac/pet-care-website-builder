@@ -14,7 +14,7 @@ const ServicesSection = () => {
     <section id="services" className="px-6 md:px-12 lg:px-20 py-16 md:py-24 bg-background">
       <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-10">
         <div>
-          <h2 className="text-3xl md:text-5xl font-heading text-foreground">Our pet care services</h2>
+          <h2 className="text-3xl md:text-5xl font-heading text-foreground">Our pet care <span className="font-accent">services</span></h2>
           <p className="mt-3 text-muted-foreground max-w-lg font-body text-sm">
             From dog walking to overnight boarding, we provide comprehensive care for all your beloved pets in Dyker Heights and nearby areas.
           </p>
@@ -32,8 +32,8 @@ const ServicesSection = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {/* Left image - hidden on mobile */}
-        <div className="hidden md:block rounded-2xl overflow-hidden bg-yellow-soft">
+        {/* Left image */}
+        <div className="rounded-2xl overflow-hidden bg-yellow-soft">
           <img src={vetWithDog} alt="Vet caring for a dog" className="w-full h-full object-cover" loading="lazy" />
         </div>
 

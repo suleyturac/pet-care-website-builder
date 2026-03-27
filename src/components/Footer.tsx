@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
           <div className="md:w-2/3 p-8 text-center">
             <h3 className="text-2xl md:text-3xl font-heading text-foreground">
-              Give your pet the best - Contact us!
+              Give your pet the <span className="font-accent">best</span> - Contact us!
             </h3>
             <div className="mt-4 flex items-center justify-center gap-4">
               <a href="tel:3476338034">

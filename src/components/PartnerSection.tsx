@@ -8,7 +8,7 @@ const PartnerSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading text-foreground leading-tight">
-            Your trusted partner in pet health
+            Your trusted partner in pet <span className="font-accent">health</span>
           </h2>
           <p className="mt-4 text-muted-foreground font-body text-sm max-w-md">
             Furrs N' Purrs provides dog walking services as well as drop-ins, sitting/boarding for all animals big or small. We also cater to cats, birds, reptiles, aquatics, and any other loving pets you have in your family!
