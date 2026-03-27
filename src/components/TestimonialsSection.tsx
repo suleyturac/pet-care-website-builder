@@ -23,7 +23,7 @@ const TestimonialsSection = () => {
 
   return (
     <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24 bg-background overflow-hidden">
-      <h2 className="text-3xl md:text-5xl font-heading text-foreground mb-8">What our clients say</h2>
+      <h2 className="text-3xl md:text-5xl font-heading text-foreground mb-8">What our <span className="font-accent">clients</span> say</h2>
       <div
         ref={scrollRef}
         onScroll={handleScroll}

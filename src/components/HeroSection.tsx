@@ -15,7 +15,7 @@ const HeroSection = () => {
     <section className="relative bg-background">
       <div className="text-center pt-10 px-4 relative z-10">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading text-foreground leading-tight max-w-3xl mx-auto">
-          The Pet Care that <em className="not-italic font-heading italic">works</em> for you
+          The Pet Care that <span className="font-accent">works</span> for you
         </h1>
         <p className="mt-3 text-muted-foreground max-w-2xl mx-auto font-body text-sm md:text-base">
           Furrs N' Purrs provides dog walking services as well as drop-ins, sitting/boarding for all animals big or small. We also cater to cats, birds, reptiles, aquatics, and any other loving pets!

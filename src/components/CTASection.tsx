@@ -10,7 +10,7 @@ const CTASection = () => {
         </div>
         <div className="md:w-1/2 p-8 md:p-14">
           <h2 className="text-3xl md:text-5xl font-heading text-foreground leading-tight">
-            Schedule your appointment today!
+            Schedule your <span className="font-accent">appointment</span> today!
           </h2>
           <p className="mt-4 text-muted-foreground font-body text-sm max-w-md">
             Give your pet the care they deserve. Contact Furrs N' Purrs for reliable, loving pet care services in Dyker Heights and surrounding Brooklyn areas.
