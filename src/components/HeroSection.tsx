@@ -14,7 +14,7 @@ const HeroSection = () => {
   return (
     <section className="relative bg-background">
       <div className="text-center pt-10 px-4 relative z-10">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading text-foreground leading-tight max-w-3xl mx-auto">
+        <h1 className="text-3xl md:text-3xl lg:text-4xl font-heading text-foreground leading-tight max-w-3xl mx-auto">
           The Pet Care that <span className="font-accent">works</span> for you
         </h1>
         <p className="mt-3 text-muted-foreground max-w-2xl mx-auto font-body text-sm md:text-base">
@@ -29,13 +29,13 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="-mt-6 w-full overflow-hidden relative z-0">
+      <div className="-mt-8 md:-mt-12 w-full relative z-0">
         <img
           src={heroDogs}
           alt="Two happy dogs - a schnauzer and a pitbull"
-          className="w-full max-h-[500px] object-cover object-center"
+          className="w-full min-h-[350px] object-contain md:max-h-[600px]"
           width={1200}
-          height={500}
+          height={600}
         />
       </div>
 
