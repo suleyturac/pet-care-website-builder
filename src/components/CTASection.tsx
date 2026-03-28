@@ -5,11 +5,13 @@ const CTASection = () => {
   return (
     <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24">
       <div className="rounded-3xl bg-lime overflow-visible flex flex-col md:flex-row items-center relative">
+        {/* Image container - overflows top on desktop */}
         <div className="md:w-1/2 h-[300px] md:h-[400px] relative">
           <img
             src={dogGreen}
             alt="Happy dog"
-            className="w-full h-full object-cover md:absolute md:bottom-0 md:left-0 md:h-[calc(100%+80px)] md:w-full md:object-cover rounded-tl-3xl md:rounded-tl-3xl"
+            className="w-full h-full object-cover rounded-tl-3xl md:absolute md:bottom-0 md:left-0 md:w-full md:object-contain md:object-bottom md:h-auto md:max-h-none md:-top-24 md:rounded-tl-3xl"
+            style={{ minHeight: '100%' }}
             loading="lazy"
             width={768}
             height={1024}

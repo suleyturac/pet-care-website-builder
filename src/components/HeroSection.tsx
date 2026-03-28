@@ -12,7 +12,7 @@ const dotColors = ["bg-yellow-400", "bg-blue-400", "bg-green-400", "bg-red-400",
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-background">
+    <section className="relative bg-background overflow-hidden">
       <div className="text-center pt-10 px-4 relative z-10">
         <h1 className="text-3xl md:text-3xl lg:text-4xl font-heading text-foreground leading-tight max-w-3xl mx-auto">
           The Pet Care that <span className="font-accent">works</span> for you
@@ -29,11 +29,12 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="-mt-8 md:-mt-12 w-full relative z-0">
+      {/* Mobile: large image tight under text, no whitespace */}
+      <div className="-mt-6 md:-mt-16 w-full relative z-0">
         <img
           src={heroDogs}
           alt="Two happy dogs - a schnauzer and a pitbull"
-          className="w-full min-h-[350px] object-contain md:max-h-[600px]"
+          className="w-full object-cover object-top h-[420px] md:h-[550px] lg:h-[600px]"
           width={1200}
           height={600}
         />
