@@ -29,12 +29,12 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Mobile: large image tight under text, no whitespace */}
-      <div className="-mt-6 md:-mt-16 w-full relative z-0">
+      {/* Image tight under text */}
+      <div className="-mt-10 md:-mt-16 w-full relative z-0 flex justify-center">
         <img
           src={heroDogs}
           alt="Two happy dogs - a schnauzer and a pitbull"
-          className="w-full object-cover object-top h-[420px] md:h-[550px] lg:h-[600px]"
+          className="w-[85%] object-contain md:w-full md:object-cover md:object-top md:h-auto md:max-h-[650px]"
           width={1200}
           height={600}
         />

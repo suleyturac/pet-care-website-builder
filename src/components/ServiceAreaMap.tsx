@@ -95,9 +95,9 @@ const ServiceAreaMap = () => {
 
   return (
     <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24 bg-foreground text-primary-foreground">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-center">
         {/* Map */}
-        <div className="relative">
+        <div className="relative w-[115%] -ml-[7.5%] md:w-full md:ml-0">
           <svg
             viewBox="0 0 500 420"
             className="w-full h-auto"
@@ -174,9 +174,9 @@ const ServiceAreaMap = () => {
           </div>
 
           {selectedArea && (
-            <div className="mt-8 p-5 rounded-2xl border border-primary-foreground/20 bg-primary-foreground/5">
-              <h3 className="font-heading text-xl mb-1">{selectedArea}</h3>
-              <p className="font-body text-sm opacity-70">
+            <div className="mt-6 md:mt-8 p-4 md:p-5 rounded-2xl border border-primary-foreground/20 bg-primary-foreground/5">
+              <h3 className="font-heading text-lg md:text-xl mb-1">{selectedArea}</h3>
+              <p className="font-body text-xs md:text-sm opacity-70">
                 {areas.find((a) => a.name === selectedArea)?.active
                   ? "We actively serve this area with all our pet care services including dog walking, boarding, and pet taxi."
                   : "This area is nearby. Contact us to check availability for services in this neighborhood."}
