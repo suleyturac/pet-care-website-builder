@@ -4,13 +4,12 @@ import { Button } from "@/components/ui/button";
 const CTASection = () => {
   return (
     <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24">
-      <div className="rounded-3xl bg-lime overflow-hidden flex flex-col md:flex-row items-center relative">
-        {/* Image container - contained within section */}
-        <div className="md:w-1/2 h-[300px] md:h-full relative md:self-stretch">
+      <div className="rounded-3xl bg-lime overflow-hidden flex flex-col md:flex-row items-center">
+        <div className="md:w-1/2 h-[300px] md:h-[400px]">
           <img
             src={dogGreen}
             alt="Happy dog"
-            className="w-full h-full object-cover object-top rounded-tl-3xl md:rounded-bl-3xl"
+            className="w-full h-full object-cover"
             loading="lazy"
             width={768}
             height={1024}
