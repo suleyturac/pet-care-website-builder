@@ -30,7 +30,7 @@ const HeroSection = () => {
       </div>
 
       {/* Image tight under text */}
-      <div className="-mt-10 md:-mt-16 w-full relative z-0 flex justify-center">
+      <div className="-mt-6 md:-mt-16 w-full relative z-0">
         <img
           src={heroDogs}
           alt="Two happy dogs - a schnauzer and a pitbull"
