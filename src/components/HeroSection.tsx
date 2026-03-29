@@ -34,7 +34,7 @@ const HeroSection = () => {
         <img
           src={heroDogs}
           alt="Two happy dogs - a schnauzer and a pitbull"
-          className="w-[85%] object-contain md:w-full md:object-cover md:object-top md:h-auto md:max-h-[650px]"
+          className="w-[95%] object-cover md:w-full md:object-cover md:object-top md:h-auto md:max-h-[650px]"
           width={1200}
           height={600}
         />
