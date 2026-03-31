@@ -18,7 +18,7 @@ const AboutSection = () => {
         {/* Left column: text top, image bottom */}
         <div className="flex flex-col gap-6">
           <p className="text-muted-foreground font-body text-sm leading-relaxed">
-            Furrs N' Purrs provides dog walking services as well as drop-ins, sitting/boarding for all animals big or small. We cater to dogs, cats, birds, reptiles, aquatics, and any other loving pets you have in your family. Located in Brooklyn, NY, we serve Dyker Heights and nearby areas.
+            With over 8 years of hands-on experience, our Brooklyn-based team treats every pet like family. From early-morning walks to overnight stays, we bring professionalism, reliability, and genuine love to every visit — so you can go about your day knowing your companion is in the best hands.
           </p>
           <div className="rounded-2xl overflow-hidden h-[300px] md:h-[350px] bg-yellow-soft hidden md:block">
             <img src={vetExamining} alt="Vet examining a pet" className="w-full h-full object-cover" loading="lazy" width={768} height={1024} />
@@ -31,7 +31,7 @@ const AboutSection = () => {
             <img src={catBlue} alt="Beautiful cat with blue eyes" className="w-full h-full object-cover" loading="lazy" width={768} height={1024} />
           </div>
           <p className="text-muted-foreground font-body text-sm leading-relaxed hidden md:block">
-            Our team of dedicated pet caregivers ensures your furry, feathered, or scaled companions receive the love and attention they deserve. We're open 24 hours to accommodate your schedule and provide peace of mind.
+            Available 24/7 across Dyker Heights, Bay Ridge, Bensonhurst, and beyond — we're here whenever your pets need us. Every caregiver on our team is trained, insured, and passionate about animal welfare.
           </p>
         </div>
       </div>
