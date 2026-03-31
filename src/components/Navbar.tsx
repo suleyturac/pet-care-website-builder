@@ -9,7 +9,7 @@ const Navbar = () => {
     <nav className="relative bg-background z-50">
       <div className="flex items-center justify-between px-6 md:px-12 lg:px-20 py-4">
         <div className="flex items-center gap-2">
-          <span className="text-xl font-heading">🐾 Furrs N' Purrs</span>
+          <a href="/" className="text-xl font-heading hover:opacity-80 transition">🐾 Furrs N' Purrs</a>
         </div>
         <div className="hidden md:flex items-center gap-8 font-body text-sm">
           <a href="#" className="text-foreground hover:text-muted-foreground transition">Home</a>

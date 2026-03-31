@@ -1,13 +1,16 @@
 import { useState, useCallback, useRef } from "react";
 import catGreen from "@/assets/cat-green.jpg";
+import testimonialDog from "@/assets/testimonial-dog.jpg";
+import testimonialReptile from "@/assets/testimonial-reptile.jpg";
+import testimonialBird from "@/assets/testimonial-bird.jpg";
 import { ChevronLeft, ChevronRight, PawPrint } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const testimonials = [
-  { quote: "My kitten always feels calm thanks to his loving attention.", name: "Sahara Connor", location: "New York, NY" },
-  { quote: "Best pet walking service in Brooklyn! My dog loves every visit and gets so excited when they arrive at the door.", name: "Mike Rodriguez", location: "Bay Ridge, NY" },
-  { quote: "They take care of my reptiles with such expertise and kindness. Not many services understand exotic pets like they do.", name: "Jenny Lee", location: "Bensonhurst, NY" },
-  { quote: "Absolutely wonderful care for my birds. Highly recommended to anyone looking for trustworthy pet care!", name: "David Kim", location: "Bath Beach, NY" },
+  { quote: "My kitten always feels calm thanks to his loving attention.", name: "Sahara Connor", location: "New York, NY", image: catGreen, alt: "Happy cat" },
+  { quote: "Best pet walking service in Brooklyn! My dog loves every visit and gets so excited when they arrive at the door.", name: "Mike Rodriguez", location: "Bay Ridge, NY", image: testimonialDog, alt: "Happy dog being walked" },
+  { quote: "They take care of my reptiles with such expertise and kindness. Not many services understand exotic pets like they do.", name: "Jenny Lee", location: "Bensonhurst, NY", image: testimonialReptile, alt: "Bearded dragon reptile" },
+  { quote: "Absolutely wonderful care for my birds. Highly recommended to anyone looking for trustworthy pet care!", name: "David Kim", location: "Bath Beach, NY", image: testimonialBird, alt: "Colorful parrot" },
 ];
 
 const TestimonialsSection = () => {
