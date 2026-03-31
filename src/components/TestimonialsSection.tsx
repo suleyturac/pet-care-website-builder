@@ -1,13 +1,16 @@
 import { useState, useCallback, useRef } from "react";
 import catGreen from "@/assets/cat-green.jpg";
+import testimonialDog from "@/assets/testimonial-dog.jpg";
+import testimonialReptile from "@/assets/testimonial-reptile.jpg";
+import testimonialBird from "@/assets/testimonial-bird.jpg";
 import { ChevronLeft, ChevronRight, PawPrint } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const testimonials = [
-  { quote: "My kitten always feels calm thanks to his loving attention.", name: "Sahara Connor", location: "New York, NY" },
-  { quote: "Best pet walking service in Brooklyn! My dog loves every visit and gets so excited when they arrive at the door.", name: "Mike Rodriguez", location: "Bay Ridge, NY" },
-  { quote: "They take care of my reptiles with such expertise and kindness. Not many services understand exotic pets like they do.", name: "Jenny Lee", location: "Bensonhurst, NY" },
-  { quote: "Absolutely wonderful care for my birds. Highly recommended to anyone looking for trustworthy pet care!", name: "David Kim", location: "Bath Beach, NY" },
+  { quote: "My kitten always feels calm thanks to his loving attention.", name: "Sahara Connor", location: "New York, NY", image: catGreen, alt: "Happy cat" },
+  { quote: "Best pet walking service in Brooklyn! My dog loves every visit and gets so excited when they arrive at the door.", name: "Mike Rodriguez", location: "Bay Ridge, NY", image: testimonialDog, alt: "Happy dog being walked" },
+  { quote: "They take care of my reptiles with such expertise and kindness. Not many services understand exotic pets like they do.", name: "Jenny Lee", location: "Bensonhurst, NY", image: testimonialReptile, alt: "Bearded dragon reptile" },
+  { quote: "Absolutely wonderful care for my birds. Highly recommended to anyone looking for trustworthy pet care!", name: "David Kim", location: "Bath Beach, NY", image: testimonialBird, alt: "Colorful parrot" },
 ];
 
 const TestimonialsSection = () => {
@@ -79,7 +82,7 @@ const TestimonialsSection = () => {
             {/* Right: image + button */}
             <div className="flex flex-col items-center gap-4">
               <div className="w-48 h-56 lg:w-56 lg:h-64 rounded-2xl overflow-hidden bg-lime flex-shrink-0">
-                <img src={catGreen} alt="Happy cat" className="w-full h-full object-cover" loading="lazy" width={512} height={512} />
+                <img src={t.image} alt={t.alt} className="w-full h-full object-cover" loading="lazy" width={512} height={512} />
               </div>
               <a href="tel:3476338034">
                 <Button className="rounded-full bg-foreground text-background px-6 py-3 font-body hover:bg-foreground/90">
@@ -134,7 +137,7 @@ const TestimonialsSection = () => {
 
         <div className="rounded-2xl bg-muted/50 p-6">
           <div className="w-full h-48 rounded-xl overflow-hidden bg-lime mb-5">
-            <img src={catGreen} alt="Happy cat" className="w-full h-full object-cover" loading="lazy" width={512} height={512} />
+            <img src={t.image} alt={t.alt} className="w-full h-full object-cover" loading="lazy" width={512} height={512} />
           </div>
 
           <span className="text-3xl font-heading text-muted-foreground/40 leading-none">"</span>
