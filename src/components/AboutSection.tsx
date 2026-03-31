@@ -31,7 +31,7 @@ const AboutSection = () => {
             <img src={catBlue} alt="Beautiful cat with blue eyes" className="w-full h-full object-cover" loading="lazy" width={768} height={1024} />
           </div>
           <p className="text-muted-foreground font-body text-sm leading-relaxed hidden md:block">
-            Our team of dedicated pet caregivers ensures your furry, feathered, or scaled companions receive the love and attention they deserve. We're open 24 hours to accommodate your schedule and provide peace of mind.
+            Available 24/7 across Dyker Heights, Bay Ridge, Bensonhurst, and beyond — we're here whenever your pets need us. Every caregiver on our team is trained, insured, and passionate about animal welfare.
           </p>
         </div>
       </div>
