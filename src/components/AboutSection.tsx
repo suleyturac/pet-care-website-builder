@@ -18,7 +18,7 @@ const AboutSection = () => {
         {/* Left column: text top, image bottom */}
         <div className="flex flex-col gap-6">
           <p className="text-muted-foreground font-body text-sm leading-relaxed">
-            Furrs N' Purrs provides dog walking services as well as drop-ins, sitting/boarding for all animals big or small. We cater to dogs, cats, birds, reptiles, aquatics, and any other loving pets you have in your family. Located in Brooklyn, NY, we serve Dyker Heights and nearby areas.
+            With over 8 years of hands-on experience, our Brooklyn-based team treats every pet like family. From early-morning walks to overnight stays, we bring professionalism, reliability, and genuine love to every visit — so you can go about your day knowing your companion is in the best hands.
           </p>
           <div className="rounded-2xl overflow-hidden h-[300px] md:h-[350px] bg-yellow-soft hidden md:block">
             <img src={vetExamining} alt="Vet examining a pet" className="w-full h-full object-cover" loading="lazy" width={768} height={1024} />
