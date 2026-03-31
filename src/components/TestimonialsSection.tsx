@@ -43,7 +43,7 @@ const TestimonialsSection = () => {
   return (
     <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24 bg-background">
       {/* Desktop layout */}
-      <div className="hidden md:block">
+      <div className="hidden md:block" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
         <div className="rounded-3xl bg-muted/50 p-10 lg:p-14">
           <div className="grid grid-cols-[1fr_1px_1.2fr_auto] gap-8 lg:gap-12 items-center">
             {/* Left: heading */}
