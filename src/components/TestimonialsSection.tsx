@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 import catGreen from "@/assets/cat-green.jpg";
 import { ChevronLeft, ChevronRight, PawPrint } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -12,17 +12,38 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const goTo = useCallback((index: number) => {
     setActiveIndex(index);
   }, []);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const diff = touchStartX.current - touchEndX.current;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        setActiveIndex((prev) => Math.min(testimonials.length - 1, prev + 1));
+      } else {
+        setActiveIndex((prev) => Math.max(0, prev - 1));
+      }
+    }
+  };
 
   const t = testimonials[activeIndex];
 
   return (
     <section className="px-6 md:px-12 lg:px-20 py-16 md:py-24 bg-background">
       {/* Desktop layout */}
-      <div className="hidden md:block">
+      <div className="hidden md:block" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
         <div className="rounded-3xl bg-muted/50 p-10 lg:p-14">
           <div className="grid grid-cols-[1fr_1px_1.2fr_auto] gap-8 lg:gap-12 items-center">
             {/* Left: heading */}
@@ -101,7 +122,7 @@ const TestimonialsSection = () => {
       </div>
 
       {/* Mobile layout */}
-      <div className="md:hidden">
+      <div className="md:hidden" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
         <div className="flex items-center gap-3 mb-6">
           <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
             <PawPrint className="w-5 h-5 text-yellow-500" />

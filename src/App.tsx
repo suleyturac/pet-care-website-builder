@@ -13,6 +13,7 @@ import PetTaxi from "./pages/services/PetTaxi.tsx";
 import DropIns from "./pages/services/DropIns.tsx";
 import SpecialPetCare from "./pages/services/SpecialPetCare.tsx";
 import ServiceAreaPage from "./pages/areas/ServiceAreaPage.tsx";
+import ScrollToTop from "./components/ScrollToTop.tsx";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/services/dog-walking" element={<DogWalking />} />
