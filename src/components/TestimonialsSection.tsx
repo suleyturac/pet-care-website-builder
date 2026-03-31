@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 import catGreen from "@/assets/cat-green.jpg";
 import { ChevronLeft, ChevronRight, PawPrint } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -12,10 +12,31 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const touchStartX = useRef(0);
+  const touchEndX = useRef(0);
 
   const goTo = useCallback((index: number) => {
     setActiveIndex(index);
   }, []);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    const diff = touchStartX.current - touchEndX.current;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        setActiveIndex((prev) => Math.min(testimonials.length - 1, prev + 1));
+      } else {
+        setActiveIndex((prev) => Math.max(0, prev - 1));
+      }
+    }
+  };
 
   const t = testimonials[activeIndex];
 
