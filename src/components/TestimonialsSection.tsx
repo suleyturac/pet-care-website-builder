@@ -82,7 +82,7 @@ const TestimonialsSection = () => {
             {/* Right: image + button */}
             <div className="flex flex-col items-center gap-4">
               <div className="w-48 h-56 lg:w-56 lg:h-64 rounded-2xl overflow-hidden bg-lime flex-shrink-0">
-                <img src={catGreen} alt="Happy cat" className="w-full h-full object-cover" loading="lazy" width={512} height={512} />
+                <img src={t.image} alt={t.alt} className="w-full h-full object-cover" loading="lazy" width={512} height={512} />
               </div>
               <a href="tel:3476338034">
                 <Button className="rounded-full bg-foreground text-background px-6 py-3 font-body hover:bg-foreground/90">
