@@ -137,7 +137,7 @@ const TestimonialsSection = () => {
 
         <div className="rounded-2xl bg-muted/50 p-6">
           <div className="w-full h-48 rounded-xl overflow-hidden bg-lime mb-5">
-            <img src={catGreen} alt="Happy cat" className="w-full h-full object-cover" loading="lazy" width={512} height={512} />
+            <img src={t.image} alt={t.alt} className="w-full h-full object-cover" loading="lazy" width={512} height={512} />
           </div>
 
           <span className="text-3xl font-heading text-muted-foreground/40 leading-none">"</span>
