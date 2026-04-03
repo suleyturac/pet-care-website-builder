@@ -10,6 +10,7 @@ const servicePages = [
   { label: "Pet Taxi", path: "/services/pet-taxi" },
   { label: "Drop-ins", path: "/services/drop-ins" },
   { label: "Special Pet Care", path: "/services/special-pet-care" },
+  { label: "Wedding Pet Attendant", path: "/services/wedding-pet-attendant" },
 ];
 
 const serviceAreas = [
