@@ -11,6 +11,7 @@ const DogWalking = () => (
       <title>Dog Walking Services in Brooklyn, NY | Furrs N' Purrs Pet Care</title>
       <meta name="description" content="Professional dog walking services in Dyker Heights, Bay Ridge, Bensonhurst & Brooklyn. Reliable, loving walks for your furry friend. Call (347) 633-8034." />
       <link rel="canonical" href="https://fnppetcare.com/services/dog-walking" />
+      <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Service","name":"Dog Walking Services in Brooklyn","provider":{"@type":"LocalBusiness","name":"Furrs N' Purrs Pet Care","telephone":"(347) 633-8034"},"areaServed":["Dyker Heights","Bay Ridge","Bensonhurst","Bath Beach","Fort Hamilton","Gravesend"],"description":"Professional dog walking services in Brooklyn, NY. Reliable, loving walks tailored to your dog's needs."})}</script>
     </Helmet>
     <div className="min-h-screen bg-background">
       <Navbar />
