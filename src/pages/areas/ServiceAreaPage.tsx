@@ -40,9 +40,12 @@ const areaData: Record<string, { name: string; description: string; nearby: stri
 
 const services = [
   { icon: Dog, title: "Dog Walking", path: "/services/dog-walking" },
-  { icon: Home, title: "Pet Sitting & Boarding", path: "/services/pet-sitting" },
+  { icon: Home, title: "Pet Sitting", path: "/services/pet-sitting" },
+  { icon: Home, title: "Boarding", path: "/services/boarding" },
   { icon: Car, title: "Pet Taxi", path: "/services/pet-taxi" },
+  { icon: Clock, title: "Drop-In Visits", path: "/services/drop-ins" },
   { icon: Sparkles, title: "Special Pet Care", path: "/services/special-pet-care" },
+  { icon: Dog, title: "Wedding Pet Attendant", path: "/services/wedding-pet-attendant" },
 ];
 
 const ServiceAreaPage = () => {
