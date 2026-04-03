@@ -1,6 +1,7 @@
 import vetWithDog from "@/assets/vet-with-dog.png";
 import beaglePink from "@/assets/beagle-pink.png";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const PartnerSection = () => {
   return (

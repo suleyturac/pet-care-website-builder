@@ -177,7 +177,7 @@ const TestimonialsSection = () => {
             ))}
           </div>
           <button
-            onClick={() => goTo(Math.min(testimonials.length - 1, activeIndex + 1))}
+            onClick={() => setActiveIndex((prev) => Math.min(testimonials.length - 1, prev + 1))}
             className="w-8 h-8 rounded-full border border-border flex items-center justify-center"
             aria-label="Next"
           >
