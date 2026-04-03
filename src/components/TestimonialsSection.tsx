@@ -135,7 +135,7 @@ const TestimonialsSection = () => {
           </h2>
         </div>
 
-        <div className="rounded-2xl bg-muted/50 p-6">
+        <div className="rounded-2xl bg-muted/50 p-6" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
           <div className="w-full h-48 rounded-xl overflow-hidden bg-lime mb-5">
             <img src={t.image} alt={t.alt} className="w-full h-full object-cover" loading="lazy" width={512} height={512} />
           </div>
