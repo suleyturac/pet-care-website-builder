@@ -11,6 +11,7 @@ const PetSitting = () => (
       <title>Pet Sitting Services in Brooklyn, NY | Furrs N' Purrs Pet Care</title>
       <meta name="description" content="Trusted pet sitting services in Dyker Heights, Bay Ridge & Brooklyn. Your pet stays comfortable at home while you're away. Call (347) 633-8034." />
       <link rel="canonical" href="https://fnppetcare.com/services/pet-sitting" />
+      <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Service","name":"Pet Sitting in Brooklyn","provider":{"@type":"LocalBusiness","name":"Furrs N' Purrs Pet Care","telephone":"(347) 633-8034"},"areaServed":["Dyker Heights","Bay Ridge","Bensonhurst","Bath Beach","Fort Hamilton","Gravesend"]})}</script>
     </Helmet>
     <div className="min-h-screen bg-background">
       <Navbar />
