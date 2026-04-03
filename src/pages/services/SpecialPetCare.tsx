@@ -11,11 +11,12 @@ const SpecialPetCare = () => (
       <title>Exotic & Special Pet Care in Brooklyn, NY | Furrs N' Purrs</title>
       <meta name="description" content="Specialized care for reptiles, birds, aquatics & exotic pets in Brooklyn. Expert handlers in Dyker Heights & surrounding areas. Call (347) 633-8034." />
       <link rel="canonical" href="https://fnppetcare.com/services/special-pet-care" />
+      <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Service","name":"Exotic & Special Pet Care in Brooklyn","provider":{"@type":"LocalBusiness","name":"Furrs N' Purrs Pet Care","telephone":"(347) 633-8034"},"areaServed":["Dyker Heights","Bay Ridge","Bensonhurst","Bath Beach","Fort Hamilton","Gravesend"]})}</script>
     </Helmet>
     <div className="min-h-screen bg-background">
       <Navbar />
       <section className="px-6 md:px-12 lg:px-20 pt-16 pb-10">
-        <Link to="/" className="text-sm font-body text-muted-foreground hover:text-foreground transition">← Back to Home</Link>
+        <Link to="/services" className="text-sm font-body text-muted-foreground hover:text-foreground transition">← All Services</Link>
         <h1 className="text-3xl md:text-5xl font-heading text-foreground mt-6 mb-4">
           Special Pet <span className="font-accent">Care</span> Services
         </h1>

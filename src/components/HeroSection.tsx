@@ -3,9 +3,9 @@ import { Button } from "@/components/ui/button";
 
 const services = [
   "Dog Walking", "Pet Sitting", "Boarding", "Drop-ins",
-  "Cat Care", "Reptile Care", "Bird Care", "Aquatic Pets",
+  "Cat Care", "Reptile Care", "Bird Care", "Aquatic Pets", "Wedding Pet Attendant",
   "Dog Walking", "Pet Sitting", "Boarding", "Drop-ins",
-  "Cat Care", "Reptile Care", "Bird Care", "Aquatic Pets",
+  "Cat Care", "Reptile Care", "Bird Care", "Aquatic Pets", "Wedding Pet Attendant",
 ];
 
 const dotColors = ["bg-yellow-400", "bg-blue-400", "bg-green-400", "bg-red-400", "bg-pink-400", "bg-purple-400", "bg-orange-400", "bg-lime-strong"];

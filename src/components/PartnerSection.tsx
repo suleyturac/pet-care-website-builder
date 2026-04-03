@@ -1,6 +1,7 @@
 import vetWithDog from "@/assets/vet-with-dog.png";
 import beaglePink from "@/assets/beagle-pink.png";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const PartnerSection = () => {
   return (
@@ -19,9 +20,9 @@ const PartnerSection = () => {
                 Book a appointment
               </Button>
             </a>
-            <a href="https://fnppetcare.com/" target="_blank" rel="noopener noreferrer" className="text-sm font-body text-foreground hover:text-muted-foreground flex items-center gap-1">
+            <Link to="/services" className="text-sm font-body text-foreground hover:text-muted-foreground flex items-center gap-1">
               Browse all services →
-            </a>
+            </Link>
           </div>
         </div>
 

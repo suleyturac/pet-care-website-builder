@@ -125,7 +125,7 @@ const TestimonialsSection = () => {
       </div>
 
       {/* Mobile layout */}
-      <div className="md:hidden" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
+      <div className="md:hidden">
         <div className="flex items-center gap-3 mb-6">
           <div className="w-10 h-10 rounded-full bg-muted flex items-center justify-center">
             <PawPrint className="w-5 h-5 text-yellow-500" />
@@ -135,7 +135,7 @@ const TestimonialsSection = () => {
           </h2>
         </div>
 
-        <div className="rounded-2xl bg-muted/50 p-6">
+        <div className="rounded-2xl bg-muted/50 p-6" onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
           <div className="w-full h-48 rounded-xl overflow-hidden bg-lime mb-5">
             <img src={t.image} alt={t.alt} className="w-full h-full object-cover" loading="lazy" width={512} height={512} />
           </div>
@@ -160,7 +160,7 @@ const TestimonialsSection = () => {
         {/* Mobile dots + arrows */}
         <div className="flex items-center justify-center gap-4 mt-4">
           <button
-            onClick={() => goTo(Math.max(0, activeIndex - 1))}
+            onClick={() => setActiveIndex((prev) => Math.max(0, prev - 1))}
             className="w-8 h-8 rounded-full border border-border flex items-center justify-center"
             aria-label="Previous"
           >
@@ -177,7 +177,7 @@ const TestimonialsSection = () => {
             ))}
           </div>
           <button
-            onClick={() => goTo(Math.min(testimonials.length - 1, activeIndex + 1))}
+            onClick={() => setActiveIndex((prev) => Math.min(testimonials.length - 1, prev + 1))}
             className="w-8 h-8 rounded-full border border-border flex items-center justify-center"
             aria-label="Next"
           >

@@ -11,11 +11,12 @@ const PetSitting = () => (
       <title>Pet Sitting Services in Brooklyn, NY | Furrs N' Purrs Pet Care</title>
       <meta name="description" content="Trusted pet sitting services in Dyker Heights, Bay Ridge & Brooklyn. Your pet stays comfortable at home while you're away. Call (347) 633-8034." />
       <link rel="canonical" href="https://fnppetcare.com/services/pet-sitting" />
+      <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Service","name":"Pet Sitting in Brooklyn","provider":{"@type":"LocalBusiness","name":"Furrs N' Purrs Pet Care","telephone":"(347) 633-8034"},"areaServed":["Dyker Heights","Bay Ridge","Bensonhurst","Bath Beach","Fort Hamilton","Gravesend"]})}</script>
     </Helmet>
     <div className="min-h-screen bg-background">
       <Navbar />
       <section className="px-6 md:px-12 lg:px-20 pt-16 pb-10">
-        <Link to="/" className="text-sm font-body text-muted-foreground hover:text-foreground transition">← Back to Home</Link>
+        <Link to="/services" className="text-sm font-body text-muted-foreground hover:text-foreground transition">← All Services</Link>
         <h1 className="text-3xl md:text-5xl font-heading text-foreground mt-6 mb-4">
           Trusted Pet <span className="font-accent">Sitting</span> Services
         </h1>

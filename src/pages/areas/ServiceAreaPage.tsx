@@ -40,9 +40,12 @@ const areaData: Record<string, { name: string; description: string; nearby: stri
 
 const services = [
   { icon: Dog, title: "Dog Walking", path: "/services/dog-walking" },
-  { icon: Home, title: "Pet Sitting & Boarding", path: "/services/pet-sitting" },
+  { icon: Home, title: "Pet Sitting", path: "/services/pet-sitting" },
+  { icon: Home, title: "Boarding", path: "/services/boarding" },
   { icon: Car, title: "Pet Taxi", path: "/services/pet-taxi" },
+  { icon: Clock, title: "Drop-In Visits", path: "/services/drop-ins" },
   { icon: Sparkles, title: "Special Pet Care", path: "/services/special-pet-care" },
+  { icon: Dog, title: "Wedding Pet Attendant", path: "/services/wedding-pet-attendant" },
 ];
 
 const ServiceAreaPage = () => {
@@ -72,7 +75,7 @@ const ServiceAreaPage = () => {
       <div className="min-h-screen bg-background">
         <Navbar />
         <section className="px-6 md:px-12 lg:px-20 pt-16 pb-10">
-          <Link to="/" className="text-sm font-body text-muted-foreground hover:text-foreground transition">← Back to Home</Link>
+          <Link to="/services" className="text-sm font-body text-muted-foreground hover:text-foreground transition">← All Services</Link>
           <h1 className="text-3xl md:text-5xl font-heading text-foreground mt-6 mb-4">
             Pet Care in <span className="font-accent">{area.name}</span>, Brooklyn
           </h1>

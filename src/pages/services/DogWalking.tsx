@@ -11,11 +11,12 @@ const DogWalking = () => (
       <title>Dog Walking Services in Brooklyn, NY | Furrs N' Purrs Pet Care</title>
       <meta name="description" content="Professional dog walking services in Dyker Heights, Bay Ridge, Bensonhurst & Brooklyn. Reliable, loving walks for your furry friend. Call (347) 633-8034." />
       <link rel="canonical" href="https://fnppetcare.com/services/dog-walking" />
+      <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Service","name":"Dog Walking Services in Brooklyn","provider":{"@type":"LocalBusiness","name":"Furrs N' Purrs Pet Care","telephone":"(347) 633-8034"},"areaServed":["Dyker Heights","Bay Ridge","Bensonhurst","Bath Beach","Fort Hamilton","Gravesend"],"description":"Professional dog walking services in Brooklyn, NY. Reliable, loving walks tailored to your dog's needs."})}</script>
     </Helmet>
     <div className="min-h-screen bg-background">
       <Navbar />
       <section className="px-6 md:px-12 lg:px-20 pt-16 pb-10">
-        <Link to="/" className="text-sm font-body text-muted-foreground hover:text-foreground transition">← Back to Home</Link>
+        <Link to="/services" className="text-sm font-body text-muted-foreground hover:text-foreground transition">← All Services</Link>
         <h1 className="text-3xl md:text-5xl font-heading text-foreground mt-6 mb-4">
           Professional Dog <span className="font-accent">Walking</span> Services
         </h1>
@@ -54,6 +55,14 @@ const DogWalking = () => (
               {area}
             </Link>
           ))}
+        </div>
+        <div className="mt-8">
+          <h3 className="text-lg font-heading text-foreground mb-3">Explore More Services</h3>
+          <div className="flex flex-wrap gap-3">
+            {[{l:"Pet Sitting",p:"/services/pet-sitting"},{l:"Boarding",p:"/services/boarding"},{l:"Pet Taxi",p:"/services/pet-taxi"},{l:"Drop-Ins",p:"/services/drop-ins"},{l:"Special Pet Care",p:"/services/special-pet-care"},{l:"Wedding Pet Attendant",p:"/services/wedding-pet-attendant"}].map(s=>(
+              <Link key={s.p} to={s.p} className="px-4 py-2 rounded-full border border-border text-sm font-body text-foreground hover:bg-muted transition">{s.l}</Link>
+            ))}
+          </div>
         </div>
       </section>
 

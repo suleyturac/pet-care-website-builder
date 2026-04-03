@@ -12,6 +12,8 @@ import Boarding from "./pages/services/Boarding.tsx";
 import PetTaxi from "./pages/services/PetTaxi.tsx";
 import DropIns from "./pages/services/DropIns.tsx";
 import SpecialPetCare from "./pages/services/SpecialPetCare.tsx";
+import WeddingPetAttendant from "./pages/services/WeddingPetAttendant.tsx";
+import ServicesIndex from "./pages/services/ServicesIndex.tsx";
 import ServiceAreaPage from "./pages/areas/ServiceAreaPage.tsx";
 import ScrollToTop from "./components/ScrollToTop.tsx";
 
@@ -33,6 +35,8 @@ const App = () => (
             <Route path="/services/pet-taxi" element={<PetTaxi />} />
             <Route path="/services/drop-ins" element={<DropIns />} />
             <Route path="/services/special-pet-care" element={<SpecialPetCare />} />
+            <Route path="/services/wedding-pet-attendant" element={<WeddingPetAttendant />} />
+            <Route path="/services" element={<ServicesIndex />} />
             <Route path="/areas/:slug" element={<ServiceAreaPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

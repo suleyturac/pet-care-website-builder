@@ -10,6 +10,7 @@ const servicePages = [
   { label: "Pet Taxi", path: "/services/pet-taxi" },
   { label: "Drop-ins", path: "/services/drop-ins" },
   { label: "Special Pet Care", path: "/services/special-pet-care" },
+  { label: "Wedding Pet Attendant", path: "/services/wedding-pet-attendant" },
 ];
 
 const serviceAreas = [
@@ -44,7 +45,7 @@ const Footer = () => {
 
         {/* Services */}
         <div>
-          <h4 className="font-body font-bold text-sm text-foreground mb-3">Services</h4>
+          <Link to="/services" className="font-body font-bold text-sm text-foreground mb-3 block hover:text-muted-foreground transition">Services</Link>
           <ul className="space-y-2 text-sm text-muted-foreground font-body">
             {servicePages.map((s) => (
               <li key={s.path}><Link to={s.path} className="hover:text-foreground transition">{s.label}</Link></li>
@@ -115,9 +116,9 @@ const Footer = () => {
                   Book an appointment
                 </Button>
               </a>
-              <a href="https://fnppetcare.com/" target="_blank" rel="noopener noreferrer" className="text-sm font-body text-foreground hover:text-muted-foreground flex items-center gap-1">
+              <Link to="/services" className="text-sm font-body text-foreground hover:text-muted-foreground flex items-center gap-1">
                 Browse all services →
-              </a>
+              </Link>
             </div>
           </div>
         </div>
