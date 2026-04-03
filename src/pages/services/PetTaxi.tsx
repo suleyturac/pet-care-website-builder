@@ -11,6 +11,7 @@ const PetTaxi = () => (
       <title>Pet Taxi Service in Brooklyn, NY | Furrs N' Purrs Pet Care</title>
       <meta name="description" content="Safe, comfortable pet transportation in Brooklyn. Vet visits, grooming appointments & more. Serving Dyker Heights, Bay Ridge & beyond. Call (347) 633-8034." />
       <link rel="canonical" href="https://fnppetcare.com/services/pet-taxi" />
+      <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Service","name":"Pet Taxi in Brooklyn","provider":{"@type":"LocalBusiness","name":"Furrs N' Purrs Pet Care","telephone":"(347) 633-8034"},"areaServed":["Dyker Heights","Bay Ridge","Bensonhurst","Bath Beach","Fort Hamilton","Gravesend"]})}</script>
     </Helmet>
     <div className="min-h-screen bg-background">
       <Navbar />
