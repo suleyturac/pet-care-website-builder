@@ -56,6 +56,14 @@ const DogWalking = () => (
             </Link>
           ))}
         </div>
+        <div className="mt-8">
+          <h3 className="text-lg font-heading text-foreground mb-3">Explore More Services</h3>
+          <div className="flex flex-wrap gap-3">
+            {[{l:"Pet Sitting",p:"/services/pet-sitting"},{l:"Boarding",p:"/services/boarding"},{l:"Pet Taxi",p:"/services/pet-taxi"},{l:"Drop-Ins",p:"/services/drop-ins"},{l:"Special Pet Care",p:"/services/special-pet-care"},{l:"Wedding Pet Attendant",p:"/services/wedding-pet-attendant"}].map(s=>(
+              <Link key={s.p} to={s.p} className="px-4 py-2 rounded-full border border-border text-sm font-body text-foreground hover:bg-muted transition">{s.l}</Link>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="px-6 md:px-12 lg:px-20 py-12 bg-lime rounded-3xl mx-6 md:mx-12 lg:mx-20 mb-16">
