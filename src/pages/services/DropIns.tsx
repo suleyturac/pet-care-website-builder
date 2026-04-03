@@ -11,6 +11,7 @@ const DropIns = () => (
       <title>Pet Drop-In Visits in Brooklyn, NY | Furrs N' Purrs Pet Care</title>
       <meta name="description" content="Pet drop-in visits in Dyker Heights, Bay Ridge & Brooklyn. Quick check-ins for feeding, playtime & medication. Call (347) 633-8034." />
       <link rel="canonical" href="https://fnppetcare.com/services/drop-ins" />
+      <script type="application/ld+json">{JSON.stringify({"@context":"https://schema.org","@type":"Service","name":"Pet Drop-In Visits in Brooklyn","provider":{"@type":"LocalBusiness","name":"Furrs N' Purrs Pet Care","telephone":"(347) 633-8034"},"areaServed":["Dyker Heights","Bay Ridge","Bensonhurst","Bath Beach","Fort Hamilton","Gravesend"]})}</script>
     </Helmet>
     <div className="min-h-screen bg-background">
       <Navbar />
